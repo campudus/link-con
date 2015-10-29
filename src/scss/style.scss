@@ -6,4 +6,138 @@ body {
   font-size: $font-size;
   font-weight: $font-weight;
   color: $default-font-color;
+  margin: 0;
+  padding: 0;
 }
+
+h1 {
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;	
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+header {
+	padding: 0;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	font-size: 14px;
+	margin: 0;
+	
+}
+footer .copy {
+	padding: 25px 0 25px 75px;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+table, th, td {
+	border: 1px solid #AFAFAF;
+	vertical-align: top;
+	font-weight: 400;
+}
+
+th, td {
+	padding: 10px;
+}
+
+th {
+	background-color: #63D491;
+}
+
+a:link, a:visited {
+	color: #63D491;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+a:hover, a:active {
+	color: #63D491;
+	text-decoration: underline;
+	font-weight: 400;
+}
+tr.grey {
+	background-color: #DFDFDF;
+}
+
+#logo-area {
+	background-color: #333;
+	width: 100%;
+	height: 400px;
+	color: #fff;
+	display: block;
+}
+
+#logo-area svg,  {
+		padding: 75px 0 0 75px;
+}
+
+#logo-area .copy {
+	padding: 0 0 0 75px;
+	line-height: 20px;
+}
+
+.col-left-green {
+	background: #63D491 none repeat scroll 0% 0%;
+	width: 40%;
+	height: 800px;
+	float: left;
+	display: block;
+
+}
+
+.col-left-green .copy {
+	color: white;
+    margin: 0 auto 10% 75px;
+    width: 75%;
+    padding-top: 25px;
+}
+
+.col-right-grey {
+	background: #f1f1f1 none repeat scroll 0% 0%;
+	width: 60%;
+	height: 800px;
+	float: right;
+	display: block;
+
+}
+
+.col-right-grey .copy {
+	color: #333;
+    margin: 0 auto 10%;
+    width: 80%;
+    padding-top: 25px;
+}
+
+.agenda, .agenda th {
+	font-size:14px;
+	text-align:left;
+	vertical-align: top;
+}
+
+@media (max-width:1000px){
+	.col-left-green {
+		width: 100%;
+		height: 400px;
+	}
+	.col-right-grey {
+		background: #f1f1f1 none repeat scroll 0% 0%;
+		width: 100%;
+		height: 800px;
+		display: block;
+	}
+}
+
