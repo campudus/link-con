@@ -1,19 +1,19 @@
 @import "variables";
 
 body {
-  background-color: $background-color;
-  font-family: $font-family;
-  font-size: $font-size;
-  font-weight: $font-weight;
-  color: $default-font-color;
-  margin: 0;
-  padding: 0;
+	background-color: $background-color;
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $default-font-color;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
 	font-size: 24px;
 	font-weight: 300;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 h2 {
@@ -55,17 +55,17 @@ th, td {
 }
 
 th {
-	background-color: #63D491;
+	background-color: $link-green;
 }
 
 a:link, a:visited {
-	color: #63D491;
+	color: $link-green;
 	text-decoration: none;
 	font-weight: 400;
 }
 
 a:hover, a:active {
-	color: #63D491;
+	color: $link-green;
 	text-decoration: underline;
 	font-weight: 400;
 }
@@ -82,7 +82,7 @@ tr.grey {
 }
 
 #logo-area svg,  {
-		padding: 75px 0 0 75px;
+	padding: 75px 0 0 75px;
 }
 
 #logo-area .copy {
@@ -91,7 +91,7 @@ tr.grey {
 }
 
 .col-left-green {
-	background: #63D491 none repeat scroll 0% 0%;
+	background: $link-green none repeat scroll 0% 0%;
 	width: 40%;
 	height: 800px;
 	float: left;
@@ -100,10 +100,10 @@ tr.grey {
 }
 
 .col-left-green .copy {
-	color: white;
-    margin: 0 auto 10% 75px;
-    width: 75%;
-    padding-top: 25px;
+	color: #fff;
+	margin: 0 auto 10% 75px;
+	width: 75%;
+	padding-top: 25px;
 }
 
 .col-right-grey {
@@ -117,9 +117,9 @@ tr.grey {
 
 .col-right-grey .copy {
 	color: #333;
-    margin: 0 auto 10%;
-    width: 80%;
-    padding-top: 25px;
+	margin: 0 auto 10%;
+	width: 80%;
+	padding-top: 25px;
 }
 
 .agenda, .agenda th {
