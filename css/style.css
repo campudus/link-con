@@ -5,7 +5,8 @@ body {
   font-weight: 600;
   color: #222222;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 h1 {
   font-size: 24px;
@@ -22,6 +23,7 @@ p {
   line-height: 24px; }
 
 header {
+  width: 100%;
   padding: 0; }
 
 footer {
@@ -44,15 +46,15 @@ th, td {
   padding: 10px; }
 
 th {
-  background-color: #63D491; }
+  background-color: #63d491; }
 
 a:link, a:visited {
-  color: #63D491;
+  color: #63d491;
   text-decoration: none;
   font-weight: 400; }
 
 a:hover, a:active {
-  color: #63D491;
+  color: #63d491;
   text-decoration: underline;
   font-weight: 400; }
 
@@ -62,26 +64,27 @@ tr.grey {
 #logo-area {
   background-color: #333;
   width: 100%;
-  height: 400px;
   color: #fff;
-  display: block; }
+  display: block;
+  padding-bottom: 25px; }
 
 #logo-area svg {
   padding: 75px 0 0 75px; }
+  #logo-area svg image {
+    width: 100%; }
 
 #logo-area .copy {
   padding: 0 0 0 75px;
   line-height: 20px; }
 
 .col-left-green {
-  background: #63D491 none repeat scroll 0% 0%;
+  background: #63d491 none repeat scroll 0% 0%;
   width: 40%;
-  height: 800px;
   float: left;
   display: block; }
 
 .col-left-green .copy {
-  color: white;
+  color: #fff;
   margin: 0 auto 10% 75px;
   width: 75%;
   padding-top: 25px; }
@@ -89,7 +92,6 @@ tr.grey {
 .col-right-grey {
   background: #f1f1f1 none repeat scroll 0% 0%;
   width: 60%;
-  height: 800px;
   float: right;
   display: block; }
 
@@ -106,10 +108,8 @@ tr.grey {
 
 @media (max-width: 1000px) {
   .col-left-green {
-    width: 100%;
-    height: 400px; }
+    width: 100%; }
   .col-right-grey {
     background: #f1f1f1 none repeat scroll 0% 0%;
     width: 100%;
-    height: 800px;
     display: block; } }
