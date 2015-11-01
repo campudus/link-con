@@ -69,7 +69,13 @@ tr.grey {
   padding-bottom: 25px; }
 
 #logo-area svg {
-  padding: 75px 0 0 75px; }
+  padding: 75px 0 0 75px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  overflow: visible; }
   #logo-area svg image {
     width: 100%; }
 
