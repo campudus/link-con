@@ -83,16 +83,16 @@ tr.grey {
 	padding-bottom: 25px;
 }
 
-#logo-area svg {
+#logo-area .logo {
 	padding: 75px 75px 25px 75px;
-	max-width: 100%;
+	max-width: 500px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: auto;
 	overflow: visible;
 
-	image {
+	img {
 		width: 100%;
 	}
 }
