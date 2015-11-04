@@ -11,6 +11,10 @@ body {
 	width: 100%;
 }
 
+#content {
+	width: 100%;
+}
+
 h1 {
 	font-size: 24px;
 	font-weight: 300;
@@ -33,6 +37,26 @@ header {
 	padding: 0;
 }
 
+section {
+	padding: $box-small-padding $box-padding;
+	display: block;
+	box-sizing: border-box;
+
+	&.col-left-green {
+		background: $link-green none repeat scroll 0% 0%;
+		width: 40%;
+		float: left;
+		color: #fff;
+	}
+
+	&.col-right-grey {
+		background: $background-color none repeat scroll 0% 0%;
+		width: 60%;
+		float: right;
+		color: #333;
+	}
+}
+
 footer {
 	clear: both;
 	width: 100%;
@@ -41,7 +65,7 @@ footer {
 }
 
 footer .copy {
-	padding: 25px 0 25px 75px;
+	padding: 25px $box-padding;
 	font-weight: 300;
 	font-size: 14px;
 }
@@ -81,55 +105,25 @@ tr.grey {
 	color: #fff;
 	display: block;
 	padding-bottom: 25px;
-}
 
-#logo-area .logo {
-	padding: 75px 75px 25px 75px;
-	max-width: 500px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	height: auto;
-	overflow: visible;
+	.logo {
+		padding: $box-padding $box-padding 0 $box-padding;
+		max-width: 500px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		height: auto;
+		overflow: visible;
 
-	img {
-		width: 100%;
+		img {
+			width: 100%;
+		}
 	}
-}
 
-#logo-area .copy {
-	padding: 0 0 0 75px;
-	line-height: 20px;
-}
-
-.col-left-green {
-	background: $link-green none repeat scroll 0% 0%;
-	width: 40%;
-	float: left;
-	display: block;
-
-}
-
-.col-left-green .copy {
-	color: #fff;
-	margin: 0 auto 10% 75px;
-	width: 75%;
-	padding-top: 25px;
-}
-
-.col-right-grey {
-	background: #f1f1f1 none repeat scroll 0% 0%;
-	width: 60%;
-	float: right;
-	display: block;
-
-}
-
-.col-right-grey .copy {
-	color: #333;
-	margin: 0 auto 10%;
-	width: 80%;
-	padding-top: 25px;
+	.copy {
+		padding: $box-small-padding $box-padding;
+		line-height: 20px;
+	}
 }
 
 .agenda, .agenda th {
@@ -138,15 +132,11 @@ tr.grey {
 	vertical-align: top;
 }
 
-@media (max-width:1000px){
-	.col-left-green {
-		width: 100%;
-	}
-
-	.col-right-grey {
-		background: #f1f1f1 none repeat scroll 0% 0%;
-		width: 100%;
-		display: block;
+@media (max-width:1000px) {
+	section {
+		&.col-left-green, &.col-right-grey {
+			width: 100%;
+		}
 	}
 }
 
