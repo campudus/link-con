@@ -8,6 +8,9 @@ body {
   padding: 0;
   width: 100%; }
 
+#content {
+  width: 100%; }
+
 h1 {
   font-size: 24px;
   font-weight: 300;
@@ -26,6 +29,21 @@ header {
   width: 100%;
   padding: 0; }
 
+section {
+  padding: 25px 75px;
+  display: block;
+  box-sizing: border-box; }
+  section.col-left-green {
+    background: #63d491 none repeat scroll 0% 0%;
+    width: 40%;
+    float: left;
+    color: #fff; }
+  section.col-right-grey {
+    background: #f1f1f1 none repeat scroll 0% 0%;
+    width: 60%;
+    float: right;
+    color: #333; }
+
 footer {
   clear: both;
   width: 100%;
@@ -33,7 +51,7 @@ footer {
   margin: 0; }
 
 footer .copy {
-  padding: 25px 0 25px 75px;
+  padding: 25px 75px;
   font-weight: 300;
   font-size: 14px; }
 
@@ -67,45 +85,19 @@ tr.grey {
   color: #fff;
   display: block;
   padding-bottom: 25px; }
-
-#logo-area .logo {
-  padding: 75px 75px 25px 75px;
-  max-width: 500px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: auto;
-  overflow: visible; }
-  #logo-area .logo img {
-    width: 100%; }
-
-#logo-area .copy {
-  padding: 0 0 0 75px;
-  line-height: 20px; }
-
-.col-left-green {
-  background: #63d491 none repeat scroll 0% 0%;
-  width: 40%;
-  float: left;
-  display: block; }
-
-.col-left-green .copy {
-  color: #fff;
-  margin: 0 auto 10% 75px;
-  width: 75%;
-  padding-top: 25px; }
-
-.col-right-grey {
-  background: #f1f1f1 none repeat scroll 0% 0%;
-  width: 60%;
-  float: right;
-  display: block; }
-
-.col-right-grey .copy {
-  color: #333;
-  margin: 0 auto 10%;
-  width: 80%;
-  padding-top: 25px; }
+  #logo-area .logo {
+    padding: 75px 75px 0 75px;
+    max-width: 500px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    overflow: visible; }
+    #logo-area .logo img {
+      width: 100%; }
+  #logo-area .copy {
+    padding: 25px 75px;
+    line-height: 20px; }
 
 .agenda, .agenda th {
   font-size: 14px;
@@ -113,9 +105,5 @@ tr.grey {
   vertical-align: top; }
 
 @media (max-width: 1000px) {
-  .col-left-green {
-    width: 100%; }
-  .col-right-grey {
-    background: #f1f1f1 none repeat scroll 0% 0%;
-    width: 100%;
-    display: block; } }
+  section.col-left-green, section.col-right-grey {
+    width: 100%; } }
