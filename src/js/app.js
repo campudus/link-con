@@ -4,7 +4,7 @@ var agenda = document.getElementById('agenda-info');
 function resize() {
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-  if (w >= 1000) {
+  if (w > 1000) {
     var maxHeight = Math.max(description.offsetHeight, agenda.offsetHeight);
 
     description.style.height = maxHeight + 'px';
