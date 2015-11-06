@@ -104,6 +104,9 @@ tr.grey {
   text-align: left;
   vertical-align: top; }
 
+.fullwidth {
+  width: 90%; }
+
 @media (max-width: 1000px) {
   section.col-left-green, section.col-right-grey {
     width: 100%; } }
