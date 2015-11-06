@@ -132,6 +132,10 @@ tr.grey {
 	vertical-align: top;
 }
 
+.fullwidth {
+	width: 90%;
+}
+
 @media (max-width:1000px) {
 	section {
 		&.col-left-green, &.col-right-grey {
